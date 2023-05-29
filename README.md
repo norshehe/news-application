@@ -1,44 +1,75 @@
-# default
+# News Application
 
-## Project setup
+News Application powered by the NewsAPI.org API. Built with Vue.js, TypeScript, Vuetify, and Vuex
 
-```
-# yarn
-yarn
+## Run Locally
 
-# npm
-npm install
+Clone the project
 
-# pnpm
-pnpm install
+```bash
+  git clone https://github.com/norshehe/news-app
 ```
 
-### Compiles and hot-reloads for development
+Go to the project directory
 
-```
-# yarn
-yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
+```bash
+  cd my-project
 ```
 
-### Compiles and minifies for production
+Install dependencies
 
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
+```bash
+  yarn
 ```
 
-### Customize configuration
+Start the server
 
-See [Configuration Reference](https://vitejs.dev/config/).
+```bash
+  yarn dev
+```
+
+## Run Using Docker
+
+Install Docker
+
+```bash
+  You can download and install Docker from the official website: https://www.docker.com/get-started
+```
+
+Clone the project
+
+```bash
+  git clone https://github.com/norshehe/news-app
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  yarn
+```
+
+Build the Docker image
+
+```bash
+  docker build -t news-application .
+```
+
+Run application
+
+```bash
+  docker run -it -p 8080:80 news-application
+```
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables value to your .env file
+
+Register and generate your API Key from NewsAPI official website: https://newsapi.org/
+
+`VITE_NEWS_API_KEY`
