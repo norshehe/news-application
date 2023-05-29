@@ -1,0 +1,5 @@
+export enum CardVariantsEnum {
+  VARIANT_ONE = "VARIANT_ONE",
+  VARIANT_TWO = "VARIANT_TWO",
+  VARIANT_THREE = "VARIANT_THREE",
+}
