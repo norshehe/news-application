@@ -75,3 +75,35 @@ Register and generate your API Key from NewsAPI official website: https://newsap
 `VITE_NEWS_API_URI = https://newsapi.org/v2`
 
 `VITE_NEWS_API_KEY`
+
+## Timeline
+
+May 25, 2023
+
+- Set up project environment
+
+- Organize folder structure
+
+- Create different services
+
+May 26, 2023
+
+- UI/UX planning and designing
+
+- Creating API Service (Top Headlines, Sources, Broken Top Headline API)
+
+- Short documentation review on Vuetify
+
+- Converting design to components
+
+May 27 - 28, 2023
+
+- Creation of headline page
+
+- Creation of article details page
+
+- Reorganizing component strucutres
+
+- Removing warning messages via yarn lint
+
+- Dockerized the application
