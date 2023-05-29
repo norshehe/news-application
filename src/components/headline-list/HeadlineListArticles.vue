@@ -1,6 +1,7 @@
 <template>
   <Loader :loading="headlineLoading" />
-  <VRow class="">
+
+  <VRow class="" v-if="topHeadlines && topHeadlines.articles.length">
     <VCol
       cols="12"
       sm="6"
@@ -19,6 +20,7 @@
       />
     </VCol>
   </VRow>
+  <EmptyStates v-else icon="mdi-newspaper" message="No News" />
   <v-dialog v-model="editDialog" persistent width="500">
     <HeadlineListArticlesEdit
       :title="editTitleValue"
@@ -33,6 +35,7 @@
 import Loader from "@/components/common/Loader.vue";
 import HeadlineListArticlesEdit from "@/components/headline-list/HeadlineListArticlesEdit.vue";
 import HeadlineListArticlesCard from "@/components/headline-list/HeadlineListArticlesCard.vue";
+import EmptyStates from "@/components/common/EmptyStates.vue";
 import { store } from "@/store";
 import { StateTypes } from "@/store/news/state";
 import { computed, ref } from "vue";

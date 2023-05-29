@@ -58,7 +58,7 @@
     </div>
   </div>
   <v-navigation-drawer v-model="history" temporary width="400">
-    <HeadlineArticlesHistory />
+    <HeadlineListArticlesHistory />
   </v-navigation-drawer>
 </template>
 <script lang="ts" setup>
@@ -69,7 +69,7 @@ import { computed, ref, watch } from "vue";
 import { NewsMutationEnums, NewsActionEnums } from "@/enums/store.enums";
 import { nextTick } from "vue";
 import { NewsApi } from "@/common/api.service";
-import HeadlineArticlesHistory from "@/components/headline-list/HeadlineArticlesHistory.vue";
+import HeadlineListArticlesHistory from "@/components/headline-list/HeadlineListArticlesHistory.vue";
 const currentSource = computed(() => store.getters.getCurrentSource as string);
 
 const history = ref(false);
