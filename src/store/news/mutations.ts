@@ -71,8 +71,17 @@ export const mutations: MutationTree<State> & Mutations = {
     if (articleHistory) {
       state.articleHistory = JSON.parse(articleHistory);
     }
-    if (state.articleHistory.includes(payload)) {
+
+    if (
+      !state.articleHistory.find(
+        (d) =>
+          d.title == payload.title &&
+          d.source.name == payload.source.name &&
+          d.author == payload.author
+      )
+    ) {
       state.articleHistory.unshift(payload);
+
       window.localStorage.setItem(
         "article-history",
         JSON.stringify(state.articleHistory)
