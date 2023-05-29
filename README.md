@@ -72,4 +72,6 @@ To run this project, you will need to add the following environment variables va
 
 Register and generate your API Key from NewsAPI official website: https://newsapi.org/
 
+`VITE_NEWS_API_URI = https://newsapi.org/v2`
+
 `VITE_NEWS_API_KEY`
